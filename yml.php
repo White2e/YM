@@ -13,7 +13,7 @@ class yml
     var $offers = [];
 
     # конструктор
-    function yml($from_charset = 'windows-1251')
+    public function __construct($from_charset = 'windows-1251')
     {
         $this->from_charset = trim(strtolower($from_charset));
     }
